@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="com.hotstar.gallery.browse.model.PhotoWithSizes" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+            <TextView
+                style="@style/UserInfo.Header"
+                android:text="@{String.format(@string/name, photo.photo.title)}" />
+
+            <TextView
+                style="@style/UserInfo.Text"
+                android:text="@{String.format(@string/owner, photo.photo.owner)}" />
+
+            <TextView
+                style="@style/UserInfo.Text"
+                android:text="@{String.format(@string/id, photo.photo.id)}" />
+
+            <TextView
+                style="@style/UserInfo.Text"
+                android:text="@{String.format(@string/download, photo.sizes.candownload)}" />
+
+            <TextView
+                style="@style/UserInfo.Text"
+                android:text="@{String.format(@string/print, photo.sizes.canprint)}" />
+
+            <TextView
+                style="@style/UserInfo.Text"
+                android:text="@{String.format(@string/blog, photo.sizes.canblog)}" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

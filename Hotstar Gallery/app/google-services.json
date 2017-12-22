@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "328971494264",
+    "firebase_url": "https://hotstar-gallery.firebaseio.com",
+    "project_id": "hotstar-gallery",
+    "storage_bucket": "hotstar-gallery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328971494264:android:282fd05b864e4e69",
+        "android_client_info": {
+          "package_name": "com.hotstar.gallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328971494264-tr5h49cr1hvlfe0lq3ntq3c8r59v55au.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN6ysefUEtHiDya9hiA1lRjd3Jy2UPWRw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
